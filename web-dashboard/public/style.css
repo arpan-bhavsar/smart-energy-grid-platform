@@ -1,0 +1,155 @@
+/* SMARTGLASS UI */
+
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.2);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --text-main: #fff;
+  --accent: #00d2ff;
+  --shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  background-attachment: fixed;
+  color: var(--text-main);
+}
+
+header {
+  text-align: center;
+  padding: 30px 10px;
+  color: #0b2e4a;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #004f6e;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding-bottom: 40px;
+}
+
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 20px;
+  color: #0a2540;
+  text-align: center;
+  width: 90%;
+  max-width: 900px;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  flex: 1 1 180px;
+  padding: 15px;
+}
+
+.card h2 {
+  font-size: 1.2em;
+  color: #003b59;
+}
+
+.card p {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #006b7e;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #e74c3c;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #27ae60;
+}
+
+input:checked + .slider:before {
+  transform: translateX(36px);
+}
+
+#status {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #004f6e;
+}
+
+#history {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#historyList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.95em;
+}
+
+#historyList li {
+  padding: 6px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  color: #003d5b;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  padding: 15px;
+  color: #555;
+}
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
